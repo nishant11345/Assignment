@@ -1,0 +1,95 @@
+.main{
+    display: flex;
+    justify-content: center;
+    
+}
+.review{
+    display: flex;
+    flex-direction: column;
+   
+}
+.heading{
+    font-size: 17px;
+    font-weight: 800;
+}
+.sub-heading{
+    font-size: 13px;
+}
+.main-heading{
+    font-size: 25px;
+    font-weight: 800;
+}
+.thumb{
+    display: flex;
+   gap: 15px;
+}
+.tab-container {
+    display: flex;
+    gap: 10px;
+    
+  }
+  
+
+  .tab {
+    width: 7vw;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 20px;
+    display: flex;
+    font-weight: 600;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+  }
+  
+  
+  .tab.active {
+    background-color: rgb(84, 233, 173);
+  }
+  
+@media (max-width: 700px) {
+    .cross-button {
+      display: block;
+       /* Show the cross button */
+    }
+    .main{
+        margin-right: 18vw;
+    }
+  
+  .heading{
+    font-size: 19px;
+    width: 78vw;
+  }
+.cross-button{
+    margin-right: 10vw;
+}
+.tab-container{
+display: flex;
+}
+.tab {
+    width: 90px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 20px;
+font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+  }
+  .tab.active {
+    background-color: rgb(84, 233, 173);
+  }
+  .Rating{
+    font-size: 48px;
+  }
+  }
+  
+  /* Media query for screens with a width greater than 600px */
+  @media (min-width: 601px) {
+    .cross-button {
+      display: none; /* Hide the cross button */
+    }
+  }
